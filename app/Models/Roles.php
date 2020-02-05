@@ -4,15 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class role extends Model
+class Roles extends Model
 {
-    public $table = "role";
+    // public $table = "Roles";
 
     public function permission(){
         return $this->belongsTo('App\Models\permission');
     }
 
-    public function users(){
-        return $this->hasMany('App\Models\users');
+    public function Users(){
+        return $this->belongsToMany('App\Models\Users','roles_users');
     }
 }

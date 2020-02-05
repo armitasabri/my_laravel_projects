@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class address extends Model
+class Address extends Model
 {
     public $table = "address";
 
-    public function users(){
-        return $this->belongsTo('App\Models\users');
+    public function Users(){
+        return $this->belongsTo('App\Models\Users');
     }
 
     public function faktor(){
