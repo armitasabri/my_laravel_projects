@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Redirect;
+use Illuminate\Http\Request;
+// use Illuminate\Contracts\Auth\Factory as Auth;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -36,5 +40,21 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        // $this->middleware('role');
     }
+
+    
+
+    // public function login_post(Request $request )
+    // {
+       
+    //             $user = Auth::user();
+                
+    //             if ($user->roles->pluck( 'name' )->contains( 'admin' )) {
+    //                 return Redirect::to( '/admin-dashboard' );
+    //             }
+                
+    //             return Redirect::to( '/dashboard' );
+    //         }
+       
 }

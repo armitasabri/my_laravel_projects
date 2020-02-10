@@ -46,12 +46,12 @@
 				<div class="float-right">
 					<ul class="right_side">
 						<li>
-							<a href="login.html">
+							<a href="{{route('home1')}}">
 								ورود/ثبت نام
 							</a>
 						</li>
 						<li>
-							<a href="#">
+						<a href="{{route('home1')}}">
 								پروفایل من
 							</a>
 						</li>

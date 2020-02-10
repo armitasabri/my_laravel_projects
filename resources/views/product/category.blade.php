@@ -231,173 +231,96 @@
 						</div>
 					</div>
 					<div class="latest_product_inner row">
+						@foreach($all as $product)
 						<div class="col-lg-3 col-md-3 col-sm-6">
 							<div class="f_p_item">
 								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-1.jpg')}}" alt="">
+								<img class="img-fluid" src="app-assets/img/product/feature-product/{{$product->imagename}}" alt="">
 									<div class="p_icon">
 										<a href="#">
 											<i class="lnr lnr-heart"></i>
 										</a>
-										<a href="#">
+									<a href="{{'addtoshoppingcart/'.$product->kala->id}}">
 											<i class="lnr lnr-cart"></i>
 										</a>
 									</div>
 								</div>
 								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
+									
+									<h4>{{$product->kala->name}}</h4>
 								</a>
-								<h5>$150.00</h5>
+								<h5>{{$product->kala->price}}</h5>
+								
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-2.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-3.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-4.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-5.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-4.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-3.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							<div class="f_p_item">
-								<div class="f_p_img">
-									<img class="img-fluid" src="{{asset('app-assets/img/product/feature-product/f-p-4.jpg')}}" alt="">
-									<div class="p_icon">
-										<a href="#">
-											<i class="lnr lnr-heart"></i>
-										</a>
-										<a href="#">
-											<i class="lnr lnr-cart"></i>
-										</a>
-									</div>
-								</div>
-								<a href="#">
-									<h4>Long Sleeve TShirt</h4>
-								</a>
-								<h5>$150.00</h5>
-							</div>
-						</div>
+					@endforeach
+
+						
+						
+						
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="left_sidebar_area">
 						<aside class="left_widgets cat_widgets">
-							<div class="l_w_title">
-								<h3>Browse Categories</h3>
+							<div class="l_w_title pr-2">
+								<h3>جستجوی دسته‌بندی کالا‌ها</h3>
 							</div>
 							<div class="widgets_inner">
 								<ul class="list">
 									<li>
-										<a href="#">Fruits and Vegetables</a>
+										<a href="#">کفش</a>
+										<ul class="list">
+											<li>
+												<a href="#">کفش زنانه</a>
+											</li>
+											<li>
+												<a href="#">کفش مردانه</a>
+											</li>
+											<li>
+												<a href="#">کفش دخترانه</a>
+											</li>
+											<li>
+												<a href="#">کفش پسرانه</a>
+											</li>
+										</ul>
 									</li>
 									<li>
-										<a href="#">Meat and Fish</a>
+										<a href="#">مانتو</a>
+										<ul class="list">
+											<li>
+												<a href="#">مانتو تابستانه</a>
+											</li>
+											<li>
+												<a href="#">مانتو زمستانه</a>
+											</li>
+											<li>
+												<a href="#">مانتو مجلسی</a>
+											</li>
+										
+										</ul>
+									</li>
+
+									<li>
+										<a href="#">شلوار</a>
+										<ul class="list ">
+											<li>
+									
+												
+													<li>
+														<a href="#">شلوار جین</a>
+													</li>
+													<li>
+														<a href="#">شلوار کتان</a>
+													</li>
+											
+											</li>
+										
+										</ul>
+									</li>
+
+									<li>
+										<a href="#">کیف</a>
 										<ul class="list">
 											<li>
 												<a href="#">Frozen Fish</a>
@@ -416,49 +339,7 @@
 											</li>
 										</ul>
 									</li>
-									<li>
-										<a href="#">Cooking</a>
-										<ul class="list">
-											<li>
-												<a href="#">Frozen Fish</a>
-											</li>
-											<li>
-												<a href="#">Dried Fish</a>
-											</li>
-											<li>
-												<a href="#">Fresh Fish</a>
-											</li>
-											<li>
-												<a href="#">Meat Alternatives</a>
-											</li>
-											<li>
-												<a href="#">Meat</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Beverages</a>
-										<ul class="list">
-											<li>
-												<a href="#">Frozen Fish</a>
-											</li>
-											<li>
-												<a href="#">Dried Fish</a>
-											</li>
-											<li>
-												<a href="#">Fresh Fish</a>
-											</li>
-											<li>
-												<a href="#">Meat Alternatives</a>
-											</li>
-											<li>
-												<a href="#">Meat</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Home and Cleaning</a>
-									</li>
+									
 								</ul>
 							</div>
 						</aside>
@@ -551,37 +432,6 @@
 						</li>
 					</ul>
 				</nav>
-			</div>
-		</div>
-	</section>
-	<!--================End Category Product Area =================-->
-
-	<!--================ Subscription Area ================-->
-	<section class="subscription-area section_gap">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title text-center">
-						<h2>Subscribe for Our Newsletter</h2>
-						<span>We won’t send any kind of spam</span>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div id="mc_embed_signup">
-						<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
-						 method="get" class="subscription relative">
-							<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
-							 required="">
-							<!-- <div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
-								</div> -->
-							<button type="submit" class="newsl-btn">Get Started</button>
-							<div class="info"></div>
-						</form>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>

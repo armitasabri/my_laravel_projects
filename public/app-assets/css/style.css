@@ -462,7 +462,7 @@ a {
 /* Caption text */
 .text {
   color: black;
-  background-color: cornsilk;
+  background-color: rgba(255, 248, 220, 0.5);
   font-size: 50px;
   padding: 16px 2px;
   position: absolute;
@@ -3071,7 +3071,7 @@ h6 {
 .most_p_list .media {
   margin-bottom: 30px; }
   .most_p_list .media .d-flex {
-    padding-right: 20px; }
+    padding-right: 10px; }
   .most_p_list .media .media-body {
     vertical-align: middle;
     align-self: center; }
@@ -3612,7 +3612,7 @@ h6 {
   vertical-align: middle;
   align-self: center; }
   .cart_inner .table tbody tr td .media .d-flex {
-    padding-right: 30px; }
+    padding-right: 10px; }
     .cart_inner .table tbody tr td .media .d-flex img {
       border: 1px solid #eeeeee;
       border-radius: 3px; }

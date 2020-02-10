@@ -12,8 +12,8 @@ class kala extends Model
         return $this->belongsTo('App\Models\category');
     }
 
-    public function images(){
-        return $this->hasMany('App\Models\images');
+    public function Images(){
+        return $this->hasMany('App\Models\images','id','kalaid');
     }
 
     public function faktor_kala(){
@@ -21,7 +21,11 @@ class kala extends Model
     }
 
     public function basket(){
-        return $this->hasMany('App\Models\basket');
+        return $this->hasMany('App\Models\basket','id','kalaid');
     }
 
+
+    public function comments(){
+        return $this->hasMany('App\Models\comments');
+    }
 }
